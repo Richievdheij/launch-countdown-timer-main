@@ -117,22 +117,3 @@ h1 {
     margin-top: 15px;
   }
 }
-
-/* HOURS */
-
-position: absolute;
-height: 18px;
-left: 0%;
-right: 0%;
-top: calc(50% - 18px/2 + 83px);
-
-font-family: 'Red Hat Text';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 5.91875px;
-
-color: #8385A9;
-
