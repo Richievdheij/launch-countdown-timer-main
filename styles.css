@@ -1,0 +1,138 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(235, 16%, 14%);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.countdown-container {
+  margin: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.time-box {
+  background-color: hsl(236, 21%, 26%);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  font-size: 2rem;
+  color: #fb6087;
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: #8385A9;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+
+.social-icons a img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(68%) sepia(88%) saturate(548%) hue-rotate(305deg) brightness(92%) contrast(102%);
+  /* This filter changes the color of the image to #fb6087 */
+}
+
+.attribution {
+  font-size: 0.75rem;
+  color: hsl(228, 45%, 44%);
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .time-box {
+    width: 100px;
+  }
+
+  .time {
+    font-size: 2.5rem;
+  }
+
+  .label {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+}
+
+/* HOURS */
+
+position: absolute;
+height: 18px;
+left: 0%;
+right: 0%;
+top: calc(50% - 18px/2 + 83px);
+
+font-family: 'Red Hat Text';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 5.91875px;
+
+color: #8385A9;
+
